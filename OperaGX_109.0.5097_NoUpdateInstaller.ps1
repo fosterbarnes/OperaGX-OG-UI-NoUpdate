@@ -5,6 +5,7 @@ $installerShortcutArg = "--launchopera=0"
 $expectedHash = "fc869c764b9dc20abab60b104a559b197f606b9fffa0c6175959357669f67cee"
 $desktopShortcut = Join-Path ([Environment]::GetFolderPath("Desktop")) "Opera GX Browser.lnk"
 $startMenuProgramsPath = Join-Path $env:APPDATA "Microsoft\Windows\Start Menu\Programs"
+[System.Console]::BackgroundColor = [System.ConsoleColor]::Black
 
 #Check if Opera is installed
 Write-Host "Please uninstall Opera GX before continuing. I recommend backing up your passwords, bookmarks, and user data. Select 'Delete my Opera user data' when uninstalling."
