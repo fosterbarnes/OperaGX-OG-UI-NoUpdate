@@ -22,7 +22,9 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
   ```
   then click "OK". Make sure there is a space between ...Setup_x64.exe and --launchopera=0
   Ex: C:\Users\Foster\Downloads\Opera_GX_109.0.5097.142_Setup_x64.exe --launchopera=0
+  
   ![explorer_8UAjXSzsJD](https://github.com/user-attachments/assets/f6f149bf-f10e-468a-81b0-7a4a30cc0551)
+  
   5. Run this new shortcut by double clicking it (Opera_GX_109.0.5097.142_Setup_x64.exe - Shortcut). Install Opera GX
   6. When the installer closes, find the "Opera GX Browser" shortcut on your desktop. Right-click it and select "Properties"
   7. To the right of "Target", add 
@@ -31,7 +33,9 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
   ```
   then click "OK". Make sure there is a space between ...\launcher.exe" and --disable-update
   Ex: "C:\Users\Foster\AppData\Local\Programs\Opera GX\launcher.exe" --disable-update
+  
   ![explorer_JBzroDVJW9](https://github.com/user-attachments/assets/4eff7e85-d182-45d3-bfe9-191086803f57)
+  
   8. Press Win+R (Windows key & 'R' at the same time). Copy and paste:
   ```
   %USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
@@ -44,7 +48,9 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
   ```
   then click "OK". Make sure there is a space between ...\launcher.exe" and --disable-update
   Ex: "C:\Users\Foster\AppData\Local\Programs\Opera GX\launcher.exe" --disable-update
+  
   ![explorer_JBzroDVJW9](https://github.com/user-attachments/assets/4eff7e85-d182-45d3-bfe9-191086803f57)
+  
   11. Press Win+R (Windows key & 'R' at the same time). Copy and paste:
   ```
   %LocalAppData%\Programs\Opera GX\109.0.5097.142
