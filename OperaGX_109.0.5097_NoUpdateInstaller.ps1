@@ -17,7 +17,7 @@ $expectedHash = "fc869c764b9dc20abab60b104a559b197f606b9fffa0c6175959357669f67ce
 $desktopShortcut = Join-Path ([Environment]::GetFolderPath("Desktop")) "Opera GX Browser.lnk"
 $startMenuProgramsPath = Join-Path $env:APPDATA "Microsoft\Windows\Start Menu\Programs"
 
-#Check if Opera is installed
+#Uninstall warning
 Write-Host "Please uninstall Opera GX before continuing. I recommend backing up your passwords, bookmarks, and user data. Select 'Delete my Opera user data' when uninstalling."
 Write-Host "(Profiles from newer versions of Opera GX may work, but a warning message will pop up every time the program opens. If you're okay with this, leave this box unticked)"
 Write-Host "`nPress any key to download Opera GX 109.0.5097.142..." -NoNewline -ForegroundColor Yellow
