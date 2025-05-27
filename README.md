@@ -2,7 +2,7 @@
 Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is not the latest version of Opera GX with the old UI, but it subjectively feels smoother than versions 112.0.5197.60-115.0.5322.124 
 
 # How it Works
-## Automatic Install:
+## Automatic Install (Windows 10/11):
 1. Open Windows Powershell or Powershell 7 as administrator (search windows for "powershell". Right-click "Windows Powershell" and open as administrator)
 2. Copy the following then paste by right clicking the Powershell window
   ```
@@ -10,7 +10,7 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
   ```
 3. Follow the on screen guide
 
-## Manual Install:
+## Manual Install (Windows 10/11):
   Please uninstall Opera GX before continuing. I recommend backing up your passwords, bookmarks, and user data. Select 'Delete my Opera user data' when uninstalling. Profiles from newer versions of Opera GX may work, but a warning message will pop up every time the   program opens. If you're okay with this, leave this box unticked.
   
  1. Download Opera 109.0.5097.142 from [https://ftp.opera.com/ftp/pub/opera_gx/109.0.5097.142/win/Opera_GX_109.0.5097.142_Setup_x64.exe](https://ftp.opera.com/ftp/pub/opera_gx/109.0.5097.142/win/Opera_GX_109.0.5097.142_Setup_x64.exe)
