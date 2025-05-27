@@ -21,7 +21,7 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
    --launchopera=0
   ```
   then click "OK". Make sure there is a space between ...Setup_x64.exe and --launchopera=0
-  Ex: C:\Users\Foster\Downloads\Opera_GX_109.0.5097.142_Setup_x64.exe --launchopera=0
+  `Ex: C:\Users\Foster\Downloads\Opera_GX_109.0.5097.142_Setup_x64.exe --launchopera=0`
   
   ![explorer_8UAjXSzsJD](https://github.com/user-attachments/assets/f6f149bf-f10e-468a-81b0-7a4a30cc0551)
   
@@ -32,7 +32,7 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
    --disable-update
   ```
   then click "OK". Make sure there is a space between ...\launcher.exe" and --disable-update
-  Ex: "C:\Users\Foster\AppData\Local\Programs\Opera GX\launcher.exe" --disable-update
+ `Ex: "C:\Users\Foster\AppData\Local\Programs\Opera GX\launcher.exe" --disable-update`
   
   ![explorer_JBzroDVJW9](https://github.com/user-attachments/assets/4eff7e85-d182-45d3-bfe9-191086803f57)
   
@@ -47,7 +47,7 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
    --disable-update
   ```
   then click "OK". Make sure there is a space between ...\launcher.exe" and --disable-update
-  Ex: "C:\Users\Foster\AppData\Local\Programs\Opera GX\launcher.exe" --disable-update
+  `Ex: "C:\Users\Foster\AppData\Local\Programs\Opera GX\launcher.exe" --disable-update`
   
   ![explorer_JBzroDVJW9](https://github.com/user-attachments/assets/4eff7e85-d182-45d3-bfe9-191086803f57)
   
