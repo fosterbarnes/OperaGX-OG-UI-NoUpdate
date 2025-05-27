@@ -57,6 +57,7 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
   %LocalAppData%\Programs\Opera GX\109.0.5097.142
   ```
   then press enter.
+  
   12. Rename `opera_autoupdate.exe` to `opera_autoupdate.exe.off` (If you just see opera_autoupdate with no ".exe", click "View" in file explorer and tick the box that says "File name extensions")
   13. Optionally, rename `opera_gx_splash.exe` to `opera_gx_splash.exe.off` if you prefer the splash screen to be disabled
   14. Search Windows for "task scheduler" and open it. If you don't see any tasks, click "Task Scheduler Library. Right-click and delete both OperaGX tasks.
