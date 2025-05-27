@@ -1,3 +1,14 @@
+$Host.UI.RawUI.WindowTitle = "OperaGX_109.0.5097_NoUpdateInstaller"
+
+#Set background color, get console size, and clear the console with background color
+[System.Console]::BackgroundColor = [System.ConsoleColor]::Black
+[System.Console]::ForegroundColor = [System.ConsoleColor]::White
+$width = [System.Console]::WindowWidth
+$height = [System.Console]::WindowHeight
+for ($i = 0; $i -lt $height; $i++) {
+    Write-Host (" " * $width)
+}
+
 $installURL = "https://ftp.opera.com/ftp/pub/opera_gx/109.0.5097.142/win/Opera_GX_109.0.5097.142_Setup_x64.exe"
 $installerEXE = "$env:USERPROFILE\Downloads\Opera_GX_109.0.5097.142_Setup_x64.exe"
 $installerLNK = "$env:USERPROFILE\Downloads\Opera_GX_109.0.5097.142_Setup_x64.lnk"
@@ -5,7 +16,6 @@ $installerShortcutArg = "--launchopera=0"
 $expectedHash = "fc869c764b9dc20abab60b104a559b197f606b9fffa0c6175959357669f67cee"
 $desktopShortcut = Join-Path ([Environment]::GetFolderPath("Desktop")) "Opera GX Browser.lnk"
 $startMenuProgramsPath = Join-Path $env:APPDATA "Microsoft\Windows\Start Menu\Programs"
-[System.Console]::BackgroundColor = [System.ConsoleColor]::Black
 
 #Check if Opera is installed
 Write-Host "Please uninstall Opera GX before continuing. I recommend backing up your passwords, bookmarks, and user data. Select 'Delete my Opera user data' when uninstalling."
