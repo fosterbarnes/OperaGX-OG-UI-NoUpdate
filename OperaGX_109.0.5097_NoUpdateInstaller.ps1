@@ -27,7 +27,7 @@ if ($actualHash -eq $expectedHash) {
     Write-Host "`nFile hash matches. OperaGX has been downloaded successfully." -ForegroundColor Green
     Write-Host "(Expected hash: https://www.virustotal.com/gui/file/fc869c764b9dc20abab60b104a559b197f606b9fffa0c6175959357669f67cee)" -ForegroundColor Green
 } else {
-    Write-Host "`nFile hash mismatch! Download may be corrupted or tampered. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:" -ForegroundColor Red
+    Write-Host "`nFile hash mismatch! Download may be corrupted or tampered. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:`nhttps://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/tree/main#manual-install" -ForegroundColor Red
     Write-Host "`nPress any key to exit..." -NoNewline -ForegroundColor Yellow
     [void][System.Console]::ReadKey($true)
     exit 1
@@ -47,7 +47,7 @@ $Shortcut.Save()
 if (Test-Path $shortcutPath) {
     Write-Host "Shortcut created successfully: $shortcutPath" -ForegroundColor Green
 } else {
-    Write-Host "Failed to create shortcut. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:" -ForegroundColor Red
+    Write-Host "Failed to create shortcut. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:`nhttps://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/tree/main#manual-install" -ForegroundColor Red
     Write-Host "Press any key to exit..." -NoNewline -ForegroundColor Yellow
     [void][System.Console]::ReadKey($true)
     exit 1
@@ -68,7 +68,7 @@ $WshShell2 = New-Object -ComObject WScript.Shell
 foreach ($startMenuShortcutPath in @($desktopShortcut) + 
     (Get-ChildItem $startMenuProgramsPath -Filter "*.lnk" -Recurse | Where-Object { $_.BaseName -like "*Opera GX Browser*" } | Select-Object -ExpandProperty FullName)) {
     if (-not (Test-Path $startMenuShortcutPath)) {
-        Write-Host "Shortcut not found: $startMenuShortcutPath. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:" -ForegroundColor Red
+        Write-Host "Shortcut not found: $startMenuShortcutPath. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:`nhttps://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/tree/main#manual-install" -ForegroundColor Red
         Write-Host "Press any key to exit..." -NoNewline -ForegroundColor Yellow
         [void][System.Console]::ReadKey($true)
         exit 1
@@ -94,7 +94,7 @@ if (Test-Path $opera_autoupdate) {
     Rename-Item $opera_autoupdate "$opera_autoupdate.off"
     Write-Host "Renamed opera_autoupdate.exe to opera_autoupdate.exe.off" -ForegroundColor Green
 } else { 
-    Write-Host "opera_autoupdate.exe not found: $opera_autoupdate. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:" -ForegroundColor Red
+    Write-Host "opera_autoupdate.exe not found: $opera_autoupdate. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:`nhttps://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/tree/main#manual-install" -ForegroundColor Red
     Write-Host "Press any key to exit..." -NoNewline -ForegroundColor Yellow
     [void][System.Console]::ReadKey($true)
     exit 1
@@ -111,7 +111,7 @@ if ($response -match '^[Yy]$') {
         Rename-Item $opera_gx_splash "$opera_gx_splash.off"
         Write-Host "Renamed opera_gx_splash.exe to opera_gx_splash.off" -ForegroundColor Green
         } else { 
-            Write-Host "opera_gx_splash not found: $opera_gx_splash. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:" -ForegroundColor Red
+            Write-Host "opera_gx_splash not found: $opera_gx_splash. Download and install manually using the link below:`n$installURL`n`nAnd follow the manual install guide:`n https://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/tree/main#manual-install" -ForegroundColor Red
             Write-Host "Press any key to exit..." -NoNewline
             [void][System.Console]::ReadKey($true)
             exit 1
@@ -150,6 +150,7 @@ if ($response2 -match '^[Yy]$') {
 
 #Done
 Write-Host "`nOpera GX 109.0.5097.142 has been successfully installed with auto-update disabled. Enjoy the OG UI!!" -ForegroundColor Green
+Write-Host "If you made a backup of your bookmarks/passwords, you can restore those now" -ForegroundColor Green
 Write-Host "`nPress any key to exit..." -NoNewline -ForegroundColor Yellow
 [void][System.Console]::ReadKey($true)
 exit
