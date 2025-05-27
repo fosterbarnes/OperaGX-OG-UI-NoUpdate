@@ -16,9 +16,7 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
 
 Alternatively, download [OperaGX_109.0.5097_NoUpdateInstaller.ps1](https://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/releases/download/1.0/OperaGX_109.0.5097_NoUpdateInstaller.ps1) from [Releases](https://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/releases), open Windows Powershell as administrator, copy and paste the following then press enter:
 ```
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-cd "$HOME\Downloads"
-./OperaGX_109.0.5097_NoUpdateInstaller.ps1
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; cd "$HOME\Downloads"; ./OperaGX_109.0.5097_NoUpdateInstaller.ps1
 ```
 
 ## Manual Install (Windows 10/11):
