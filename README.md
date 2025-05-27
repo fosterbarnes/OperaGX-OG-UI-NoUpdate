@@ -10,10 +10,15 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
   ```
 3. Follow the on screen guide
 
-Alternatively, download [OperaGX_109.0.5097_NoUpdateInstaller.ps1](https://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/releases/download/1.0/OperaGX_109.0.5097_NoUpdateInstaller.ps1) from [Releases](https://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/releases), Copy the following then paste by right clicking the Powershell window. Press 'a', 'enter', then 'enter' again
-```
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; cd "$HOME\Downloads"; ./OperaGX_109.0.5097_NoUpdateInstaller.ps1
-```
+  <details>
+  <summary>Automatic Install Alternative</summary>
+
+  Alternatively, download [OperaGX_109.0.5097_NoUpdateInstaller.ps1](https://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/releases/download/1.0/OperaGX_109.0.5097_NoUpdateInstaller.ps1) from [Releases](https://github.com/fosterbarnes/OperaGX-OG-UI-NoUpdate/releases),   Copy the following then paste by right clicking the Powershell window. Press 'a', 'enter', then 'enter' again
+  ```
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; cd "$HOME\Downloads"; ./OperaGX_109.0.5097_NoUpdateInstaller.ps1
+  ```
+
+  </details>
 
 ## Manual Install (Windows 10/11):
   Please uninstall Opera GX before continuing. I recommend backing up your passwords, bookmarks, and user data. Select 'Delete my Opera user data' when uninstalling. Profiles from newer versions of Opera GX may work, but a warning message will pop up every time the   program opens. If you're okay with this, leave this box unticked.
