@@ -41,6 +41,7 @@ Installs Opera GX 109.0.5097.142 for Windows and disables auto-update. This is n
   %USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
   ```
   then press enter.
+  
   9. Find `Opera GX Browser` then right-click it and select properties
   10. To the right of "Target", add 
   ```
